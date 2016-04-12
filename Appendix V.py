@@ -111,9 +111,9 @@ def analyse():
                 for i in range(images_per_channel):
                     try:
                         redimg2.seek(i)
-                        redarr2 = numpy.array(redimg2)
+                        redarr2 = np.array(redimg2)
                         redarr3 = redarr2[y:y1,x:x1]
-                        red.append(numpy.mean(redarr3))
+                        red.append(np.mean(redarr3))
                     except:
                         pass
                 red_dict[count] = red
@@ -122,9 +122,9 @@ def analyse():
                 for i in range(images_per_channel):
                     try:
                         uvimg2.seek(i)
-                        uvarr2 = numpy.array(uvimg2)
+                        uvarr2 = np.array(uvimg2)
                         uvarr3 = uvarr2[y:y1,x:x1]
-                        uv.append(numpy.mean(uvarr3))
+                        uv.append(np.mean(uvarr3))
                     except:
                         pass
                 uv_dict[count] = uv            
